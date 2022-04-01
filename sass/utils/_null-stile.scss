@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img,
+svg{
+  display: block;
+}
+
+address{
+  font-style: normal;
+}
+
+body{
+  font-family: $base-font;
+  color: $prime-color-text;
+}
