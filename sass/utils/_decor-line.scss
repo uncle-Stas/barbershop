@@ -1,0 +1,9 @@
+@mixin decoration-line($right-margin) {
+  &::before {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: currentColor;
+    margin-right: $right-margin;
+  }
+}
