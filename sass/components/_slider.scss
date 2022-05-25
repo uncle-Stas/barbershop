@@ -1,0 +1,28 @@
+.hero__container{
+  padding: 0;
+}
+.slider-wrapper{
+  position: relative;
+ }
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+
+// ---------- buttons ----------
+
+.slick-arrow{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

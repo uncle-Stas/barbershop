@@ -1,0 +1,29 @@
+.left-side-hero{
+  display: none;
+}
+
+.hero__section{
+  height: 580px;
+  background-color: var(--background-dark-color);
+}
+
+
+
+.hero__text-content{
+  position: absolute;
+  z-index: 9;
+  top: 208px;
+  max-width: 306px;
+  margin: 0 15px;
+
+  @media screen and (min-width: 420px) {
+    margin: 0 31px;
+  }
+}
+
+.hero-title{
+  font-family: 'Raleway', sans-serif;
+  @include fonts(700, 48px, 56px);
+  letter-spacing: 0.05em;
+  color: var(--text-prime-color-on-dark);
+}

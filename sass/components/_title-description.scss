@@ -1,0 +1,6 @@
+.title-description{
+  margin-top: 20px;
+  @include fonts(400, 16px, 26px);
+  letter-spacing: 0.02em;
+  color: var(--text-second-color-on-dark);
+}
