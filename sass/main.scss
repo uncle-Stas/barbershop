@@ -1,0 +1,21 @@
+// BASE
+@import './base/null-style';
+@import './base/variables-color';
+@import './base/base_style';
+
+// UTILS
+@import './utils/container';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+
+// COMPONENTS
+@import './components/logo';
+@import './components/link-button-on-form';
+@import './components/section-title';
+
+// LAYOUTS
+@import './layouts/header';
+@import './layouts/hero';
+
+@import './layouts/footer';

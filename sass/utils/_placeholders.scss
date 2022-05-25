@@ -1,0 +1,8 @@
+%hover-focus-link{
+  transition: color 300ms linear;
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+}

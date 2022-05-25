@@ -1,0 +1,264 @@
+// 
+// Для отмены прокрутки при активном меню
+.body-hide {
+  overflow: hidden;
+}
+// 
+// 
+
+@media screen and (max-width: 767px) {
+  .navigation{
+    display: none;
+  }
+
+  .wrapper-for-tel-and-link-button{
+    display: none;
+  }
+}
+
+.header__section{
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  padding: 40px 0;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link{
+  display: block;
+}
+
+.logo{
+  fill: var(--text-prime-color-on-dark);
+}
+
+.button-burger{
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text-prime-color-on-dark);
+
+  &_close{
+    display: block;
+    margin-left: auto;
+    margin-bottom: 30px;
+    color: var(--text-prime-color);
+  }
+
+  @extend %hover-focus-link;
+}
+
+.burger-btn{
+  fill: currentColor;
+}
+
+.close-btn{
+  fill: currentColor;
+}
+
+.mobile-menu-backdrop{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: auto;
+  background-color: rgba(25, 28, 38, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 300ms linear, opacity 300ms linear, visibility 300ms linear;
+
+  &.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu{
+  position: absolute;
+
+  @media screen and (max-width: 346px) {
+    width: 100vw;
+  }
+  width: 347px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  padding: 48px 31px 0 50px;
+  background-color: #fff;
+}
+
+.mobile-menu-nav{
+  margin-bottom: 64px;
+}
+
+.mobile-menu-nav__item{
+  &:not(:last-child){
+    margin-bottom: 24px;
+  }
+}
+.mobile-menu-nav__link{
+  @include fonts(600, 18px, 25px);
+  letter-spacing: 0.1em;
+  @extend %hover-focus-link;
+}
+
+.mobile-menu__tel{
+  display: block;
+  margin-bottom: 24px;
+  @include fonts(600, 18px, 25px);
+  letter-spacing: 0.1em;
+  @extend %hover-focus-link;
+}
+
+.link-button-on-form_mobile-menu-margin-bottom{
+  margin-bottom: 64px;
+}
+
+.social-media-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+
+  &::before {
+    position: relative;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    top: 9px;
+    margin-right: 40px;
+    background-color: var(--text-prime-color);
+  }
+}
+
+.social-media__item{
+  &:not(:last-child){
+    margin-bottom: 24px;
+  }
+}
+
+.social-media__link{
+  @include fonts(600, 14px, 19px);
+  letter-spacing: 0.2em;
+  @extend %hover-focus-link;
+}
+
+// ========================= 768px+ ====================
+
+@media screen and (min-width: 768px) {
+  
+  .button-burger{
+    display: none;
+  }
+
+  .mobile-menu-backdrop{
+    display: none;
+  }
+
+  .header__section{
+    padding: 32px 0;
+  }
+
+  .header__container{
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .logo-link{
+    align-self: stretch;
+    margin-right: 52px;
+  }
+
+  .logo{
+    fill: var(--text-prime-color);
+  }
+
+  .navigation{
+    margin-right: 46px;
+  }
+  .navigation__list{
+    display: flex;
+  }
+
+  .navigation__item{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+
+  .navigation__link{
+    @include fonts(600, 12px, 16px);
+    letter-spacing: 0.1em;
+    color: var(--text-prime-color-on-dark);
+    transition: color 300ms linear;
+    
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .phone-number{
+    display: block;
+    @media screen and (max-width: 1279px) {
+      margin-top: 20px;
+    }    
+    text-align: center;
+    @include fonts(600, 12px, 16px);
+    letter-spacing: 0.1em;
+    color: var(--text-prime-color-on-dark);
+    transition: color 300ms linear;
+    
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+// ======================= 1280px+ ================
+
+@media screen and (min-width: 1280px) {
+  
+  .header__container{
+    align-items: center;
+  }
+  
+  .logo-link {
+    margin-right: 69px;
+  }  
+  
+  .navigation {
+    margin-right: auto;
+  }  
+  
+  .navigation__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  
+  .wrapper-for-tel-and-link-button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .phone-number {
+    margin-right: 40px;
+  }
+}
