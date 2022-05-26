@@ -43,7 +43,7 @@ address {
 }
 
 body {
-  background-color: darkblue;
+  background-color: var(--background-prime-color);
   font-family: 'Open Sans', sans-serif;
   color: var(--text-prime-color);
 }
@@ -193,6 +193,57 @@ a {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.slick-dots {
+  position: absolute;
+  z-index: 11;
+  right: 31px;
+  bottom: 275px;
+  font-size: 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 419px) {
+  .slick-dots {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .slick-dots {
+    bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .slick-dots {
+    bottom: 80px;
+  }
+}
+
+.slick-dots li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.slick-dots button {
+  padding: 0;
+  width: 8px;
+  height: 2px;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--text-second-color-on-dark);
+  -webkit-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.slick-dots button:hover, .slick-dots button:focus {
+  background-color: var(--text-prime-color-on-dark);
+}
+
+.slick-active button {
+  width: 17px;
+  background-color: var(--text-prime-color-on-dark);
 }
 
 .body-hide {
@@ -476,7 +527,6 @@ a {
 }
 
 .hero__section {
-  height: 580px;
   background-color: var(--background-dark-color);
 }
 

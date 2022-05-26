@@ -26,3 +26,47 @@
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+// ----------------- dots ---------
+
+.slick-dots{
+  position: absolute;
+  z-index: 11;
+  right: 31px;
+  bottom: 275px;
+  @media screen and (max-width: 419px) {
+    right: 15px;
+  }
+  @media screen and (max-width: 369px) {
+    bottom: 150px;
+  }
+  @media screen and (max-width: 328px) {
+    bottom: 80px;
+  }
+  font-size: 0;
+  text-align: right;
+
+  & li:not(:last-child){
+    margin-bottom: 12px;
+  }
+  
+  & button{
+    padding: 0;
+    width: 8px;
+    height: 2px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--text-second-color-on-dark);
+    transition: background-color 300ms linear;
+
+    &:hover,
+    &:focus{
+      background-color: var(--text-prime-color-on-dark);
+    }
+  }
+}
+
+.slick-active button{
+  width: 17px;
+  background-color: var(--text-prime-color-on-dark);
+}
