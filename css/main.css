@@ -173,6 +173,18 @@ a {
   color: var(--accent-color);
 }
 
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17857;
+  letter-spacing: 0.05em;
+}
+
+.section-title_dark-theme {
+  color: var(--text-prime-color-on-dark);
+}
+
 .over-title {
   margin-bottom: 20px;
   display: -webkit-box;

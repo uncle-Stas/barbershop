@@ -1,1 +1,10 @@
 // font-family: 'Raleway', sans-serif;
+.section-title{
+  font-family: 'Raleway', sans-serif;
+  @include fonts(700, 28px, 33px);
+  letter-spacing: 0.05em;
+
+  &_dark-theme{
+    color: var(--text-prime-color-on-dark);
+  }
+}
