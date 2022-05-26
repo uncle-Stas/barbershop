@@ -1,0 +1,36 @@
+.social-media__list {
+  display: flex;
+  align-items: center;
+
+  &_rotate {
+    margin-bottom: -18px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    background-color: var(--text-prime-color);
+  }
+}
+
+.social-media__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.social-media__link{
+  @include fonts(600, 11px, 15px);
+  letter-spacing: 0.2em;
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus{
+    color: var(--accent-color);
+  }
+}

@@ -2,5 +2,12 @@
   margin-top: 20px;
   @include fonts(400, 16px, 26px);
   letter-spacing: 0.02em;
-  color: var(--text-second-color-on-dark);
+
+  &_dark-theme{
+    color: var(--text-second-color-on-dark);
+  }
+  
+  @media screen and (min-width: 1280px) {
+    @include fonts(400, 18px, 30px);
+  }
 }

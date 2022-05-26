@@ -1,6 +1,4 @@
-.hero__container{
-  padding: 0;
-}
+
 .slider-wrapper{
   position: relative;
  }
@@ -15,34 +13,87 @@
 
 
 // ---------- buttons ----------
-
+@media screen and (max-width: 767px) {
+  .slick-arrow {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+}
+// ------------ buttons after 768px ---------
 .slick-arrow{
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  bottom: 40px;
   padding: 0;
-  overflow: hidden;
+  z-index: 8;
   border: 0;
-  clip: rect(0 0 0 0);
+  background-color: transparent;
+  @include fonts(600, 11px, 15px);
+  letter-spacing: 0.1em;
+  color: var(--text-third-color-on-dark);
+  cursor: pointer;
+
+  &::after{
+    content: "";
+    margin-top: 8px;
+    width: 63px;
+    height: 1px;
+    background-color: var(--text-third-color-on-dark);
+    transition: background-color 300ms linear;
+  }
+
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus{
+    color: var(--text-prime-color-on-dark);
+    &.slick-arrow::after{
+      background-color: var(--text-prime-color-on-dark);
+    }
+  }
 }
 
+.slick-prev{
+  right: 112px;
+}
+
+.slick-next{
+  align-items: flex-end;
+  right: 37px;
+}
+
+@media screen and (min-width: 1280px) {
+  .slick-prev {
+    right: 131px;
+  }
+
+  .slick-next {
+    right: 48px;
+  }
+}
+
+// ---------------------------------------------------
 // ----------------- dots ---------
 
 .slick-dots{
   position: absolute;
-  z-index: 11;
+  z-index: 7;
   right: 31px;
   bottom: 275px;
   @media screen and (max-width: 419px) {
     right: 15px;
   }
   @media screen and (max-width: 369px) {
-    bottom: 150px;
+    bottom: 50px;
   }
-  @media screen and (max-width: 328px) {
-    bottom: 80px;
-  }
+  
   font-size: 0;
   text-align: right;
 
@@ -70,3 +121,18 @@
   width: 17px;
   background-color: var(--text-prime-color-on-dark);
 }
+
+@media screen and (min-width: 768px) {
+  .slick-dots{
+    right: 36px;
+    bottom: 325px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slick-dots {
+    right: 52px;
+  }
+}
+
+// -----------------------------------------------
