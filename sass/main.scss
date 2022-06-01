@@ -4,6 +4,7 @@
 @import './base/base_style';
 
 // UTILS
+@import './utils/section';
 @import './utils/container';
 @import './utils/mixins';
 @import './utils/placeholders';
@@ -21,5 +22,6 @@
 // LAYOUTS
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/about';
 
 @import './layouts/footer';

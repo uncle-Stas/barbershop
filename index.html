@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">BarberShop</title>
+    <meta name="description" content="barbershop kyiv" />
+    <meta name="description" content="барбершоп киев" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -48,14 +50,19 @@
           <a href="#" class="link-button-on-form link-button-on-form_dark-theme">онлайн-запись</a>
           <a href="tel:+380441111111" class="phone-number">+38 044 111 11 11</a>
         </div>
-        <button type="button" class="button-burger" data-menu-open>
+        <button type="button" class="button-burger" data-menu-open aria-label="открыть меню">
           <svg class="burger-btn" width="40" height="40">
             <use href="./images/sprite.svg#icon-burger"></use>
           </svg>
         </button>
         <div class="mobile-menu-backdrop" data-menu>
           <div class="mobile-menu">
-            <button type="button" class="button-burger button-burger_close" data-menu-close>
+            <button
+              type="button"
+              class="button-burger button-burger_close"
+              data-menu-close
+              aria-label="закрыть меню"
+            >
               <svg class="close-btn" width="40" height="40">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
@@ -84,7 +91,7 @@
               <ul class="mobile-menu__social-media-mobile">
                 <li class="social-media-mobile__item">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/"
                     class="social-media-mobile__link"
                     lang="en"
                     target="_blank"
@@ -94,7 +101,7 @@
                 </li>
                 <li class="social-media-mobile__item">
                   <a
-                    href="#"
+                    href="https://www.youtube.com/"
                     class="social-media-mobile__link"
                     lang="en"
                     target="_blank"
@@ -115,7 +122,7 @@
             <ul class="social-media__list social-media__list_rotate">
               <li class="social-media__item">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/"
                   class="social-media__link"
                   lang="en"
                   target="_blank"
@@ -125,7 +132,7 @@
               </li>
               <li class="social-media__item">
                 <a
-                  href="#"
+                  href="https://www.youtube.com/"
                   class="social-media__link"
                   lang="en"
                   target="_blank"
@@ -315,6 +322,103 @@
                 Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section__about">
+        <div class="container container__about">
+          <div class="about__img-block">
+            <div class="about__img1">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/about-img/img1/about-img1-desktop.webp    1x,
+                    ./images/about-img/img1/about-img1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/about-img/img1/about-img1-desktop.jpg    1x,
+                    ./images/about-img/img1/about-img1-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-img/img1/about-img1-tablet.webp    1x,
+                    ./images/about-img/img1/about-img1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-img/img1/about-img1-tablet.jpg    1x,
+                    ./images/about-img/img1/about-img1-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/about-img/img1/about-img1-tablet.jpg" alt="пенит бороду" />
+              </picture>
+            </div>
+            <div class="about__img2">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/about-img/img2/about-img2-desktop.webp    1x,
+                    ./images/about-img/img2/about-img2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/about-img/img2/about-img2-desktop.jpg    1x,
+                    ./images/about-img/img2/about-img2-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-img/img2/about-img2-tablet.webp    1x,
+                    ./images/about-img/img2/about-img2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-img/img2/about-img2-tablet.jpg    1x,
+                    ./images/about-img/img2/about-img2-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/about-img/img2/about-img2-tablet.jpg" alt="бреет затылок" />
+              </picture>
+            </div>
+          </div>
+          <div class="about__text-block">
+            <p class="over-title">О НАС</p>
+            <h2 class="section-title">
+              Лучший Барбершоп <br />
+              твоего города
+            </h2>
+            <p class="title-description">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </p>
+            <p class="about__text">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <a rel="stylesheet" href="#" class="link-button-on-form">онлайн-запись</a>
           </div>
         </div>
       </section>

@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+  .about__img-block {
+    display: none;
+  }
+}
+
+.about__text{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  @include fonts(400, 14px, 26px);
+  letter-spacing: 0.02em;
+  color: var(--text-second-color);
+}
+
+// --------------------------- 768px+ ---------------------
+
+@media screen and (min-width: 768px) {
+  .container__about {
+    display: flex;
+  }
+
+  .about__img-block{
+    margin-right: 30px;
+  }
+
+  @media screen and (max-width: 1276px) {
+    .about__img1{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// ------------------------- 1280px+ ---------------------
+
+@media screen and (min-width: 1280px) {
+  .about__img-block{
+    display: flex;
+    margin-right: 64px;
+  }
+
+  .about__img1{
+    margin-right: 30px;
+  }
+}
