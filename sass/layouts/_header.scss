@@ -19,7 +19,7 @@
 .header__section{
   position: absolute;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   padding: 40px 0;
@@ -242,6 +242,7 @@
   
   .logo-link {
     margin-right: 69px;
+    margin-left: 0;
   }  
   
   .navigation {

@@ -427,7 +427,7 @@ a {
 .header__section {
   position: absolute;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   padding: 40px 0;
@@ -664,6 +664,7 @@ a {
   }
   .logo-link {
     margin-right: 69px;
+    margin-left: 0;
   }
   .navigation {
     margin-right: auto;
@@ -895,7 +896,7 @@ a {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section__service {
-    background-image: url(../images/service-img/service-bg-img-tablet2x.png);
+    background-image: url(../images/service-img/service-bg-img-tablet@2x.png);
   }
 }
 
@@ -915,7 +916,7 @@ a {
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .section__service {
-    background-image: url(../images/service-img/service-bg-img-desktop2x.png);
+    background-image: url(../images/service-img/service-bg-img-desktop@2x.png);
   }
 }
 
