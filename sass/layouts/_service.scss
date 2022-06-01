@@ -1,0 +1,98 @@
+.section__service{
+  background-color: #111319;
+  background-image: url(../images/service-img/service-bg-img-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/service-img/service-bg-img-mobile@2x.png);
+  }
+}
+
+.wrapper-list{
+  margin-top: 44px;
+  margin-bottom: 50px;
+}
+
+.service__item{
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+
+  display: flex;
+
+  @include fonts(400, 14px, 30px);
+  letter-spacing: 0.02em;
+  color: var(--text-second-color-on-dark);
+
+}
+
+.service__name{
+  flex-grow: 1;
+  display: flex;
+  align-items: baseline;
+  &::after{
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin: 0 6px;
+    background-color: var(--text-second-color-on-dark);
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .service__list:not(:last-child){
+    margin-bottom: 20px;
+  }
+
+  .wrapper-list{
+    padding: 30px;
+    background-image: linear-gradient(rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__service{
+    background-image: url(../images/service-img/service-bg-img-tablet.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/service-img/service-bg-img-tablet2x.png);
+    }
+  }
+
+  .service__item{
+    @include fonts(400, 18px, 30px)
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section__service {
+    background-image: url(../images/service-img/service-bg-img-desktop.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/service-img/service-bg-img-desktop2x.png);
+    }
+  }
+
+  .wrapper-list{
+    display: flex;
+  }
+
+  .service__list{
+    flex-grow: 1;
+    padding: 30px 40px;
+
+    &:first-child{
+      background-image: linear-gradient(rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+    }
+
+    &:last-child{
+      background-image: linear-gradient(rgba(9, 11, 19, 1), rgba(9, 11, 19, 0.2));
+    }
+  }
+}

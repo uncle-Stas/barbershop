@@ -8,6 +8,12 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
+  &_center-position{
+    display: block;
+    margin: 0 auto;
+    width: 163px;
+  }
+
   &_dark-theme{
     color: var(--text-prime-color-on-dark);
     background-color: transparent;
