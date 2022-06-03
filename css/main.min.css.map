@@ -23,6 +23,7 @@
         "../sass/layouts/_about.scss",
         "../sass/layouts/_service.scss",
         "../sass/layouts/_advantages.scss",
+        "../sass/layouts/_our-masters.scss",
         "../sass/layouts/_footer.scss"
     ],
     "names": [],
