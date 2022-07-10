@@ -1168,4 +1168,39 @@ a {
     width: calc((100% - 60px) / 3);
   }
 }
+
+.over-title_big-margin-bottom {
+  margin-bottom: 44px;
+}
+
+.gallery__item img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .gallery__item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__item {
+    width: calc((100% - 120px) / 4);
+  }
+}
 /*# sourceMappingURL=main.css.map */
