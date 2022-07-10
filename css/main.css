@@ -1,7 +1,6 @@
 ul,
 ol,
 li {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -1061,6 +1060,112 @@ a {
   }
   .advantages__text-wrapper {
     margin-right: 70px;
+  }
+}
+
+.section__our-masters {
+  background-color: var(--background-second-color);
+}
+
+.section__our-masters img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .our-masters__container {
+    padding: 0 159px;
+  }
+}
+
+.our-masters__list {
+  margin-top: 44px;
+}
+
+.our-masters__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .our-masters__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+
+.our-masters__name {
+  margin-bottom: 8px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38889;
+  letter-spacing: 0.02em;
+}
+
+.our-masters__position {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35714;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.social-networks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-networks__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-prime-color);
+}
+
+.social-networks__link:hover .social-networks__icon,
+.social-networks__link:focus .social-networks__icon {
+  fill: var(--accent-color);
+}
+
+.social-networks__icon {
+  fill: var(--text-prime-color);
+  -webkit-transition: fill 300ms linear;
+  transition: fill 300ms linear;
+}
+
+@media screen and (min-width: 1280px) {
+  .our-masters__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .our-masters__item {
+    width: calc((100% - 60px) / 3);
   }
 }
 /*# sourceMappingURL=main.css.map */
