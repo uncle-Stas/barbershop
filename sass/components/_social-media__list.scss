@@ -1,6 +1,7 @@
 .social-media__list {
   display: flex;
   align-items: center;
+  margin: 0;
 
   &_rotate {
     margin-bottom: -18px;
@@ -9,7 +10,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 1px;
@@ -24,13 +25,13 @@
   }
 }
 
-.social-media__link{
+.social-media__link {
   @include fonts(600, 11px, 15px);
   letter-spacing: 0.2em;
   transition: color 300ms linear;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: var(--accent-color);
   }
 }

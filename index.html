@@ -33,21 +33,21 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">О нас</a>
+              <a href="#about" class="navigation__link">О нас</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Услуги и цены</a>
+              <a href="#service" class="navigation__link">Услуги и цены</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Мастера</a>
+              <a href="#masters" class="navigation__link">Мастера</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Контакты</a>
+              <a href="#contacts" class="navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="wrapper-for-tel-and-link-button">
-          <a href="#" class="link-button-on-form link-button-on-form_dark-theme">онлайн-запись</a>
+          <a href="#appointment-form" class="link-button-on-form link-button-on-form_dark-theme">онлайн-запись</a>
           <a href="tel:+380201111111" class="phone-number">+38 020 111 11 11</a>
         </div>
         <button type="button" class="button-burger" data-menu-open aria-label="открыть меню">
@@ -70,21 +70,21 @@
             <nav class="mobile-menu-nav">
               <ul class="mobile-menu-nav__list">
                 <li class="mobile-menu-nav__item">
-                  <a href="#" class="mobile-menu-nav__link">О нас</a>
+                  <a href="#about" class="mobile-menu-nav__link">О нас</a>
                 </li>
                 <li class="mobile-menu-nav__item">
-                  <a href="#" class="mobile-menu-nav__link">Услуги и цены</a>
+                  <a href="#service" class="mobile-menu-nav__link">Услуги и цены</a>
                 </li>
                 <li class="mobile-menu-nav__item">
-                  <a href="#" class="mobile-menu-nav__link">Мастера</a>
+                  <a href="#masters" class="mobile-menu-nav__link">Мастера</a>
                 </li>
                 <li class="mobile-menu-nav__item">
-                  <a href="#" class="mobile-menu-nav__link">Контакты</a>
+                  <a href="#contacts" class="mobile-menu-nav__link">Контакты</a>
                 </li>
               </ul>
             </nav>
             <a href="tel:+380201111111" class="mobile-menu__tel">+38 020 111 1 1 11</a>
-            <a href="#" class="link-button-on-form link-button-on-form_mobile-menu-margin-bottom"
+            <a href="#appointment-form" class="link-button-on-form link-button-on-form_mobile-menu-margin-bottom" data-mobile-menu-btn
               >онлайн-запись</a
             >
             <div class="social-media-wrapper">
@@ -325,7 +325,7 @@
           </div>
         </div>
       </section>
-      <section class="section section__about">
+      <section id="about" class="section section__about">
         <div class="container container__about">
           <div class="about__img-block">
             <div class="about__img1">
@@ -418,11 +418,11 @@
               команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <a rel="stylesheet" href="#" class="link-button-on-form">онлайн-запись</a>
+            <a rel="stylesheet" href="#appointment-form" class="link-button-on-form">онлайн-запись</a>
           </div>
         </div>
       </section>
-      <section class="section section__service">
+      <section id="service" class="section section__service">
         <div class="container">
           <p class="over-title over-title_dark-theme">Проведи время в компании лучших мастеров</p>
           <h2 class="section-title section-title_dark-theme">Услуги и цены</h2>
@@ -466,7 +466,7 @@
           </div>
           <a
             rel="stylesheet"
-            href="#"
+            href="#appointment-form"
             class="link-button-on-form link-button-on-form_dark-theme link-button-on-form_center-position"
             >онлайн-запись</a
           >
@@ -500,7 +500,7 @@
           </h2>
         </div>
       </section>
-      <section class="section section__our-masters">
+      <section id="masters" class="section section__our-masters">
         <div class="container our-masters__container">
           <p class="over-title">для настоящих ценителей атмосферы</p>
           <h2 class="section-title">Наши мастера</h2>
@@ -762,7 +762,53 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <div class="form-and-contacts">
+      <div class="container">
+        <section id="appointment-form" class="section form__section">
+          <h2 class="section-title section-title_dark-theme">Онлайн-запись</h2>
+          <form action="" class="appointment-form">
+            <label>
+              <input type="text" name="name" placeholder="Имя*">
+            </label>
+            <label>
+              <input type="text" name="phone" placeholder="Телефон*">
+            </label>
+            <textarea name="message" cols="30" rows="10" placeholder="сообщение"></textarea>
+            <button type="submit" class="link-button-on-form link-button-on-form_dark-theme link-button-on-form_center-position">отправить</button>
+          </form>
+        </section>
+        <section id="contacts" class="section">
+          <h2 class="section-title section-title_dark-theme">Контакты</h2>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer__container">
+        <span class="copyright">&copy; Copyright 2020</span>
+        <ul class="social-media__list">
+              <li class="social-media__item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-media__link"
+                  lang="en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="social-media__item">
+                <a
+                  href="https://www.youtube.com/"
+                  class="social-media__link"
+                  lang="en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+      </div>
+    </footer>
     <!-- Connect scripts -->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/jquery-1.11.0.min.js"></script>
