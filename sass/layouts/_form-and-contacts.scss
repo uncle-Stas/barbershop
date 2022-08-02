@@ -1,3 +1,98 @@
 .form-and-contacts {
   background-color: var(--background-dark-color);
 }
+
+.form__section {
+}
+
+.container {
+}
+
+.appointment-form {
+  margin-top: 44px;
+}
+
+.appointment-form__input {
+  width: 100%;
+  margin-bottom: 44px;
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 1px rgba(157, 164, 189, 0.4) solid;
+  outline: none;
+  background-color: var(--background-dark-color);
+  color: var(--text-prime-color-on-dark);
+  @include fonts(400, 14px, 18px);
+  transition: border-color 300ms linear;
+
+  &::placeholder {
+    @include fonts(600, 11px, 15px);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 300ms linear;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--text-prime-color-on-dark);
+
+    &::placeholder {
+      color: var(--text-prime-color-on-dark);
+    }
+  }
+}
+
+.appointment-form__textarea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+  margin-bottom: 44px;
+  border: none;
+  border-bottom: 1px rgba(157, 164, 189, 0.4) solid;
+  outline: none;
+  background-color: var(--background-dark-color);
+  color: var(--text-prime-color-on-dark);
+  @include fonts(400, 14px, 18px);
+  transition: border-color 300ms linear;
+
+  &::placeholder {
+    @include fonts(600, 11px, 15px);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 300ms linear;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--text-prime-color-on-dark);
+
+    &::placeholder {
+      color: var(--text-prime-color-on-dark);
+    }
+  }
+}
+
+.appointment-form button {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .appointment-form__input {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .appointment-form__input {
+    width: 265px;
+  }
+}
+// -------------------------------- contacts --------------------------

@@ -1,5 +1,6 @@
 .link-button-on-form {
   display: inline-block;
+  width: 163px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: var(--accent-color) solid 1px;
@@ -7,14 +8,14 @@
   @include fonts(600, 12px, 16px);
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
 
-  &_center-position{
+  &_center-position {
     display: block;
     margin: 0 auto;
-    width: 163px;
   }
 
-  &_dark-theme{
+  &_dark-theme {
     color: var(--text-prime-color-on-dark);
     background-color: transparent;
   }

@@ -763,24 +763,27 @@
       </section>
     </main>
     <div class="form-and-contacts">
-      <div class="container">
-        <section id="appointment-form" class="section form__section">
+      <section id="appointment-form" class="section form__section">
+        <div class="container">
           <h2 class="section-title section-title_dark-theme">Онлайн-запись</h2>
           <form action="" class="appointment-form">
             <label>
-              <input type="text" name="name" placeholder="Имя*">
+              <input class="appointment-form__input" type="text" name="name" placeholder="Имя*">
             </label>
             <label>
-              <input type="text" name="phone" placeholder="Телефон*">
+              <input class="appointment-form__input" type="text" name="phone" placeholder="Телефон*">
             </label>
-            <textarea name="message" cols="30" rows="10" placeholder="сообщение"></textarea>
-            <button type="submit" class="link-button-on-form link-button-on-form_dark-theme link-button-on-form_center-position">отправить</button>
+            <textarea class="appointment-form__textarea" name="message" placeholder="сообщение"></textarea>
+            <button type="submit" class="link-button-on-form link-button-on-form_dark-theme">отправить</button>
           </form>
-        </section>
-        <section id="contacts" class="section">
+        </div>
+      </section>
+      <section id="contacts" class="section">
+        <div class="container">
           <h2 class="section-title section-title_dark-theme">Контакты</h2>
-        </section>
-      </div>
+          
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="container footer__container">
