@@ -1,4 +1,4 @@
-.over-title{
+.over-title {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -6,13 +6,16 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-prime-color);
-  
-  &_dark-theme{
+
+  &_dark-theme {
     color: var(--text-third-color-on-dark);
+    &-white {
+      color: var(--text-prime-color-on-dark);
+    }
   }
-  
-  &::before{
-    content: "";
+
+  &::before {
+    content: '';
     width: 60px;
     height: 1px;
     margin-right: 20px;

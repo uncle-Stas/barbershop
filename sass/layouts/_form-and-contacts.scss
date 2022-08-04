@@ -2,12 +2,6 @@
   background-color: var(--background-dark-color);
 }
 
-.form__section {
-}
-
-.container {
-}
-
 .appointment-form {
   margin-top: 44px;
 }
@@ -91,8 +85,120 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .form__section {
+    margin-right: 143px;
+  }
+  .appointment-form {
+    width: 560px;
+  }
+
   .appointment-form__input {
     width: 265px;
   }
+
+  .appointment-form__textarea {
+    width: 560px;
+  }
 }
 // -------------------------------- contacts --------------------------
+
+.contacts__section {
+  background-image: url(../images/contacts-bg/mobile.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contacts__list {
+  margin-top: 40px;
+  margin-bottom: 44px;
+}
+
+.contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: var(--text-second-color-on-dark);
+  @include fonts(400, 18px, 30px);
+  letter-spacing: 0.02em;
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--text-prime-color-on-dark);
+
+    & > .contacts__icon {
+      stroke: var(--text-prime-color-on-dark);
+    }
+  }
+}
+
+.contacts__icon {
+  flex-shrink: 0;
+  margin-right: 16px;
+  stroke: var(--text-second-color-on-dark);
+  transition: stroke 300ms linear;
+}
+
+.work-time {
+  color: var(--text-second-color-on-dark);
+  @include fonts(400, 18px, 30px);
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contacts__container {
+    display: flex;
+    align-items: center;
+  }
+  .contacts__list {
+    margin-right: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__section {
+    background-image: url(../images/contacts-bg/tablet.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__item {
+    width: 272px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bgcolor {
+    background-color: var(--background-dark-color);
+  }
+  .contacts__section {
+    background-image: none;
+  }
+
+  .contacts__list {
+    margin-bottom: 70px;
+  }
+
+  .form__container,
+  .contacts__container {
+    padding: 0;
+    width: auto;
+  }
+
+  .form-and-contacts {
+    width: 1280px;
+    padding: 0 55px;
+    margin: 0 auto;
+    display: flex;
+    background-image: url(../images/contacts-bg/desktop.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
